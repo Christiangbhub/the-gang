@@ -32,7 +32,7 @@
             <img src="logo.png" alt="" height="100px">
         </a>
         <ul>
-            <li><a href="#">Sign up</a></li>
+            <li><a href="javascript:()" onclick="showPopup();">Sign up</a></li>
             <li><a href="#">My Courses</a></li>
             <li><a href="#info">More Info</a></li>
 
@@ -44,7 +44,7 @@
             <p>Every week we have <span class="highlight">a party.</span> So, to gain access to it, you must be a full fledged member of our School.
                 You can sign up for free. Members will recieve various benefits like giftcards, vouchers, exclusive meetings, so on and so forth.
                 No hesitating! Sign up for free <a href="#">Now</a>
-                <button class="ctc">Sign Me Up!</button>
+                <button class="ctc" onclick="showPopup();">Sign Me Up!</button>
             </p>
         </div>
     </div>
@@ -56,7 +56,7 @@
         <ul class="nb-list">
             <li class="blue">Integrity</li>
             <li class="grey">&nbsp;</li>
-            <li class=" yellow dragging">Affordability (it's Cheap)</li>
+            <a href="#"><li class=" yellow dragging">Affordability (it's Cheap)</li></a>
             <li class="red">Reliability</li>
             <li class="blue">Wonderful Teachers</li>
             <li class="salmon">easy interface</li>
@@ -91,33 +91,44 @@
     </div>
     <img src="img/characters/the-gang.png"  width="735" height="399" alt="the-gang" class="cbum">
     <footer>
-        made by Christian George <a href="#">&amp; chris-to-code</a>
+        made by Christian George <a href="#">&copy; chris-to-code</a>
     </footer>
-    <div class="popup">
-        <div class="blanket"></div>
-        <div class="content" id="sign-up">
-            <h2>fill in your details</h2>
-            <form action="">
-                <div class="item">
-                <label>Your First Name</label>
-                <input type="text" placeholder="eg.Your-Name" value="chris">
-            </div>
-            <div class="item">
-                <label>Your Last Name</label>
-                <input type="text" placeholder="eg.Surname">
-            </div>
-            <div class="item">
-                <label>Your email</label>
-                <input type="email" placeholder="email">
-            </div>
-            <div class="item">
-                <label>Gender</label>
-                <input type="text" placeholder="male/female">
-            </div>
-            <button class="ctc">Register</button>
+    
+
+
+    <div class="popup" id="popup">
+        <div class="blanket">
+            <div class="content" id="sign-up">
+            <h2>Fill in your Details</h2>
+            <form action="" id="form">
+                    <div class="row">
+                        <div class="item">
+                            <label>Your First Name</label>
+                            <input type="text" placeholder="eg.Your-Name" value="chris">
+                        </div>
+                        <div class="item">
+                            <label>Your Last Name</label>
+                            <input type="text" placeholder="eg.Surname">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="item">
+                            <label>Your email</label>
+                            <input type="email" placeholder="email">
+                        </div>
+                        <div class="item">
+                            <label>Coding Experience</label>
+                            <input type="text" placeholder="Beginner/Pro" value="Beginner">
+                        </div>
+                    </div>
+                    <button class="ctc">Register</button>
             </form>
-            <button class="close"></button>
+                    <button class="close" onclick="hidePopup();"></button>
+                </div>
+                
         </div>
     </div>
+
+    <script src="script.js" type="text/javascript"></script>
 </body>
 </html>
