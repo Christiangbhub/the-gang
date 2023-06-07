@@ -352,9 +352,7 @@ footer a {
 }
 @media (max-width: 900px) {
     body{
-       
-        max-width: 700px;
-        min-width: 800px;
+        max-width: fit-content;
     }
     .wrapper{
         width: 50%;
@@ -403,9 +401,8 @@ footer a {
         padding-left: 50px;
     }
     body{
-       
-        max-width: 700px;
-        min-width: 800px;
+        max-width: fit-content;
+
     }
     img{
         width: 50%;
@@ -445,8 +442,7 @@ footer a {
     }
     body{
        
-        max-width: 700px;
-        min-width: 800px;
+        max-width: fit-content;
     }
     img{
         width: 50%;
