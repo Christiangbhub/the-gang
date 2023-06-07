@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 
+@media (max-width: 640px) {
+   body{
+    width: 100%;
+   }
+}
 body, html{
     font-family: 'Varela Round', sans-serif;
     padding: 0;
@@ -273,8 +278,7 @@ footer a {
     left: 0;
     z-index: 3;
 }
-
-.popup.show{
+.popup .show{
     display: block;
 }
 
@@ -346,7 +350,75 @@ footer a {
     padding:15px 20px;
 
 }
-
+@media (max-width: 900px) {
+    body{
+       
+        max-width: 700px;
+        min-width: 800px;
+    }
+    img{
+        width: 50%;
+        height: 50%;
+    }
+    .story{
+        padding-left: 10px;
+        padding-right: 10px;
+        max-width: 700px;
+        min-width: 800px;
+    }
+    .character1, .character2, .character3{
+        display: none;
+    }
+    .hero-banner, .wrapper{
+        height: auto;
+        width: 100%;
+    }
+    nav{
+        display: none;
+    }
+    footer{
+       
+       width: 100%;
+    }
+}
+@media (max-width: 700px) {
+    .wrapper{
+        width: 100%;
+        margin: 0 auto;
+    }
+    p, h1, h2, h3{
+        padding-right: 80px;
+    }
+    body{
+       
+        max-width: 700px;
+        min-width: 800px;
+    }
+    img{
+        width: 50%;
+        height: 50%;
+    }
+    .story{
+        padding-left: 10px;
+        padding-right: 10px;
+        max-width: 700px;
+        min-width: 800px;
+    }
+    .character1, .character2, .character3{
+        display: none;
+    }
+    .hero-banner, .wrapper{
+        height: auto;
+        width: 100%;
+    }
+    nav{
+        display: none;
+    }
+    footer{
+       
+       width: 100%;
+    }
+}
 .popup .row{
     
 }
