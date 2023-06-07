@@ -356,6 +356,55 @@ footer a {
         max-width: 700px;
         min-width: 800px;
     }
+    .wrapper{
+        width: 50%;
+        height: 50vh;
+        text-align: center;
+        margin: 0 auto;
+    }
+    p, h1, h2, h3{
+        padding-right: 80px;
+    }
+    img{
+        width: 50%;
+        height: 50%;
+    }
+    .story{
+        padding-left: 10px;
+        padding-right: 10px;
+        max-width: 700px;
+        min-width: 800px;
+    }
+    .character1, .character2, .character3{
+        display: none;
+    }
+    .hero-banner, .wrapper{
+        height: auto;
+        width: 100%;
+    }
+    nav{
+        display: none;
+    }
+    footer{
+       
+       width: 100%;
+    }
+}
+@media (max-width: 450px) {
+    .wrapper{
+        width: 50%;
+        height: 50vh;
+        text-align: center;
+        margin: 0 auto;
+    }
+    p, h1, h2, h3{
+        padding-right: 80px;
+    }
+    body{
+       
+        max-width: 700px;
+        min-width: 800px;
+    }
     img{
         width: 50%;
         height: 50%;
@@ -383,7 +432,9 @@ footer a {
 }
 @media (max-width: 700px) {
     .wrapper{
-        width: 100%;
+        width: 50%;
+        height: 50vh;
+        text-align: center;
         margin: 0 auto;
     }
     p, h1, h2, h3{
